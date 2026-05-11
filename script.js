@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     setHeroSlideDistance();
     window.addEventListener('resize', setHeroSlideDistance);
+    window.addEventListener('load', setHeroSlideDistance);
 
     /* --- Position Timeline Elements --- */
     function layoutTimeline() {
