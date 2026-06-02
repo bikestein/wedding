@@ -386,6 +386,19 @@ section {
     margin-top: 8px;
 }
 
+/* Heart Dividers */
+.heart-divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem 0;
+}
+.heart-icon {
+    width: 16px;
+    height: 16px;
+    fill: #ccc;
+}
+
 /* RSVP Form */
 .wedding-form {
     width: 100%;
