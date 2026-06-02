@@ -26,7 +26,6 @@
 }
 
 html {
-    scroll-behavior: smooth;
     background-color: var(--bg-color);
     color: var(--text-primary);
     overflow-x: hidden;
@@ -40,6 +39,7 @@ body {
     overflow-x: hidden;
     position: relative;
     -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
 }
 
 /* Background Parallax Element */
@@ -138,6 +138,7 @@ section {
 .hero-gallery {
     width: 100%;
     overflow: hidden;
+    touch-action: pan-y;
 }
 .hero-track {
     display: flex;

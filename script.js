@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     }
-    window.addEventListener('scroll', reveal);
+    window.addEventListener('scroll', reveal, { passive: true });
     reveal();
 
     /* --- Hero Gallery: вычисляем дистанцию прокрутки --- */
@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (ampersand) {
             ampersand.style.transform = `translate(-50%, calc(-50% + ${scrollY * 0.2}px))`;
         }
-    });
+    }, { passive: true });
 
     /* --- RSVP Form Submission Logic (Google Sheets) --- */
     const form = document.getElementById('rsvp-form');
