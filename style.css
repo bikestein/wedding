@@ -28,7 +28,6 @@
 html {
     background-color: var(--bg-color);
     color: var(--text-primary);
-    overflow-x: hidden;
 }
 
 body {
@@ -145,6 +144,8 @@ section {
     gap: var(--hero-gap);
     width: max-content;
     animation: hero-slide 10s linear infinite alternate;
+    pointer-events: none;
+    touch-action: pan-y;
 }
 .hero-img {
     width: var(--hero-photo-w);
@@ -153,6 +154,8 @@ section {
     flex-shrink: 0;
     filter: grayscale(100%);
     transition: filter 0.8s ease;
+    pointer-events: auto;
+    touch-action: pan-y;
 }
 .hero-img:hover {
     filter: grayscale(0%);
