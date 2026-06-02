@@ -119,12 +119,12 @@ section {
     content: '&';
     position: absolute;
     top: 50%;
-    left: 0;
-    transform: translate(-25%, -45%);
-    font-family: var(--font-heading);
+    right: 0;
+    transform: translate(25%, -45%);
+    font-family: 'Frank Ruhl Libre', serif;
     font-size: 12rem;
-    font-style: italic;
-    font-weight: 300;
+    font-style: normal;
+    font-weight: 400;
     color: rgba(0, 0, 0, 0.04);
     z-index: 0;
     pointer-events: none;
